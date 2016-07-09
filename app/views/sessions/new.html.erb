@@ -1,0 +1,22 @@
+<div class="row">
+	<div class="columns ten">
+	<h3>Login!</h3>
+
+	<% if flash[:errors] %>
+		<p style="color:red;"><%= flash[:errors] %></p>
+	<% end %>
+
+	<form action="/sessions" method="post">
+		<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+		<label>Email: </label>
+		<input type="email" name="email">
+
+		<label>Password: </label>
+		<input type="password" name="password"><br>
+
+		<button type="submit" class="button-primary">Login</button>
+	</form>
+	<a href="/registration">Not Registered?</a>
+	</div>
+</div>

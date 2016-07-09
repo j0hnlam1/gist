@@ -40,3 +40,4 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'hirb'
 gem 'rails-footnotes'
+gem 'twitter-bootstrap-rails', '~> 3.2', '>= 3.2.2'
